@@ -21,7 +21,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: compiled
-          path: ./**/target/*
+          path: ./**/target/**/*.class
   analysis:
     name: Analysis
     needs: build
